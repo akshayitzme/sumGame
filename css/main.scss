@@ -1,0 +1,38 @@
+// Colors
+$clr1: #fcf8ec;
+$clr2: #d0e8f2;
+$clr3: #79a3b1 ;
+$clr4: #456268 ;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap&Lato:wght@700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: $clr4;
+}
+
+.gameTitle{
+    font-family: 'Langar', cursive;
+}
+
+.window{
+    background-color: $clr2;
+    width: 140vh;
+}
+
+.q{
+    background-color: $clr3;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+@media screen and(max-width: 800px){
+ 
+    .window{
+        width: 50vh;
+    }
+}
