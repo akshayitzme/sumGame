@@ -21,7 +21,7 @@ const setWindow = () => {
   gImg.classList.add("d-none");
   gContent.classList.remove("d-none");
   let toggler = document.querySelector("#toggler");
-  toggler.innerHTML = "STOP";
+  toggler.innerHTML = "Stop Game";
   toggler.setAttribute("onclick", "stopGame()");
 };
 
