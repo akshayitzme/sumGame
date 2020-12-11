@@ -86,7 +86,7 @@ const incrScore = () => {
 };
 
 const decrScore= ()=>{
-  while(score != 0){
+  while(score !== 0){
     score--;
     let scoreElm = document.querySelector("#score");
     scoreElm.innerHTML = score;
