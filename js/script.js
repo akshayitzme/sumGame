@@ -86,12 +86,13 @@ const incrScore = () => {
 };
 
 const decrScore= ()=>{
-  while(score !== 0){
-    score--;
+  if(score == 0){
+    
+  }else{
+    --score;
     let scoreElm = document.querySelector("#score");
     scoreElm.innerHTML = score;
   }
-  
 }
 const normalizeBtns= ()=>{
     let btns= document.getElementsByName('choice');
