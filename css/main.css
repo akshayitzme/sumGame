@@ -27,12 +27,18 @@ body {
   font-weight: 700;
 }
 
+.fadeIn {
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
 @-webkit-keyframes fadeIn {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   50% {
     opacity: 0;
+    color: blue;
   }
   100% {
     opacity: 1;
@@ -41,10 +47,11 @@ body {
 
 @keyframes fadeIn {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   50% {
     opacity: 0;
+    color: blue;
   }
   100% {
     opacity: 1;

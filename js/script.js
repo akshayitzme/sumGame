@@ -7,12 +7,15 @@ const startGame = () => {
 };
 
 const stopGame= ()=>{
-    let gContent = document.querySelector("#gContent");
-    let stopBtn= document.querySelector('#toggler');
-    stopBtn.classList.add('d-none');
-    // <img src="/images/pexels-magda-ehlers-1329296.jpg" alt="" id="gImg" class="img-fluid rounded mt-2"></img>
-    let replay= `<p class="h4"> Score: ${score}</p> <p>  </p><div class="stop mx-auto mt-1"> <p class="h5">You Played Well 😊 ✌️</p> <button onclick="location.reload();" class="mt-2 btn btn-info">Replay</button> </div> </p>`;
-    gContent.innerHTML=replay;
+    setTimeout(()=>{
+      let gContent = document.querySelector("#gContent");
+      let stopBtn= document.querySelector('#toggler');
+      stopBtn.classList.add('d-none');
+      // <img src="/images/pexels-magda-ehlers-1329296.jpg" alt="" id="gImg" class="img-fluid rounded mt-2"></img>
+      let replay= `<p class="h4"> Score: <span class="text-danger">${score}</span></p> <p>  </p><div class="stop mx-auto mt-1"> <p class="h5 fadeIn">You Played Well 😊 ✌️</p> <button onclick="location.reload();" class="mt-2 btn btn-info">Replay</button> </div> </p>`;
+      gContent.innerHTML=replay
+    }, 500);
+
 }
 
 const setWindow = () => {

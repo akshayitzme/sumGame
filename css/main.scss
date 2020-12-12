@@ -36,14 +36,17 @@ body{
     font-weight: 700;
 }
 
-
+.fadeIn{
+    animation: fadeIn 1s ease-in;
+}
 
 @keyframes fadeIn{
     0%{
-        opacity: 1;
+        opacity: 0;
     }
     50%{
         opacity: 0;
+        color: blue;
     }
     100%{
         opacity: 1;
