@@ -1,8 +1,14 @@
 // Colors
-$clr1: #fcf8ec;
+/* $clr1: #fcf8ec;
 $clr2: #d0e8f2;
 $clr3: #79a3b1 ;
-$clr4: #456268 ;
+$clr4: #456268 ; */
+
+$clr1: #ffe6e6;
+// $clr2: #dff3e3;
+$clr2: rgba(223, 243, 227, 0.8);
+$clr3: #a685e2;
+$clr4: #6155a6;
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Langar&display=swap&Lato:wght@700&display=swap');
@@ -28,6 +34,20 @@ body{
     background-color: $clr3;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+}
+
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 @media screen and(max-width: 800px){

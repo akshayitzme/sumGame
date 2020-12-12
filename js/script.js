@@ -8,7 +8,7 @@ const startGame = () => {
 
 const stopGame= ()=>{
     let gContent = document.querySelector("#gContent");
-    let stopBtn= document.querySelector('.stop');
+    let stopBtn= document.querySelector('#toggler');
     stopBtn.classList.add('d-none');
     // <img src="/images/pexels-magda-ehlers-1329296.jpg" alt="" id="gImg" class="img-fluid rounded mt-2"></img>
     let replay= `<p class="h4"> Score: ${score}</p> <p>  </p><div class="stop mx-auto mt-1"> <p class="h5">You Played Well 😊 ✌️</p> <button onclick="location.reload();" class="mt-2 btn btn-info">Replay</button> </div> </p>`;
@@ -42,6 +42,11 @@ const makeQ = () => {
 
 const setChoices = (nums) => {
   let choices = ["#choice1", "#choice2", "#choice3"];
+  let ansrBtns= document.getElementsByName('choice');
+    // to chnage options randomly
+    for(i of ansrBtns){
+      i.innerHTML= ansr+Math.floor(Math.random() * 10 + 0);
+    }
 
   ansr = nums["num1"] + nums["num2"];
   let ansrBtn = document.querySelector(
@@ -52,7 +57,6 @@ const setChoices = (nums) => {
 };
 
 const selChoice = (x) => {
-  // return x;
   let selBtn = document.querySelector(`#choice${x}`);
   let selValue = selBtn.innerHTML;
   if (selValue == ansr) {

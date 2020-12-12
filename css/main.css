@@ -1,3 +1,7 @@
+/* $clr1: #fcf8ec;
+$clr2: #d0e8f2;
+$clr3: #79a3b1 ;
+$clr4: #456268 ; */
 @import url("https://fonts.googleapis.com/css2?family=Langar&display=swap&Lato:wght@700&display=swap");
 * {
   margin: 0%;
@@ -5,7 +9,7 @@
 }
 
 body {
-  background-color: #456268;
+  background-color: #6155a6;
 }
 
 .gameTitle {
@@ -13,14 +17,38 @@ body {
 }
 
 .window {
-  background-color: #d0e8f2;
+  background-color: rgba(223, 243, 227, 0.8);
   width: 140vh;
 }
 
 .q {
-  background-color: #79a3b1;
+  background-color: #a685e2;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 800px) {

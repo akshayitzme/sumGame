@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SumGame</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
     <link rel="shortcut icon" href="/logos/countdown.svg" type="image/x-icon">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
@@ -22,8 +24,8 @@
 
                  
                     <div  class="d-flex justify-content-between">
-                        <p>Question: <span id="q" class="bg-light rounded p-1">1 </span></p>
-                        <p>Score: <span id="score" class="bg-white rounded p-1">0 </span></p>
+                        <p class="">Question: <span id="q" class="bg-light rounded p-1">1 </span></p>
+                        <p class="">Score: <span id="score" class="bg-white rounded p-1">0 </span></p>
                     </div>
 
                     <div class="q p-3 rounded">
@@ -37,7 +39,7 @@
 
                  </div>
                    
-                    <div class="stop mx-auto mt-5">
+                    <div class="mx-auto mt-5">
                         <button onclick="startGame()" id="toggler" class="btn btn-info">Start Game</button>
                     </div>
                 </div>
